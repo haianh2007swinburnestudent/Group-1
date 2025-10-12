@@ -1,0 +1,188 @@
+/*
+
+filename: style.css
+
+author: Nguyen Tuan Khoa
+
+created: 12/10/2025
+
+last modified: 13/10/2025
+
+description: CSS style for project part 1
+
+*/
+:root{--accent:#0a74ff;}
+header{padding:12px 0;}
+
+
+    .logo {
+      display:inline-grid; /*displays as a grid element but keeps the size as an inline element */
+      width:56px;
+      height:56px;    
+    }
+
+   span#companyname{
+    font-size: 50px;
+    font-weight: bold;
+    }
+
+    .logo img{
+        width:46px;
+        height:46px;
+        display:block; /*display the logo image as a block*/
+      }
+
+      nav a.menu{
+      align-items:center; 
+      padding:8px 10px;
+      font-weight:bold;
+      color: black;
+      text-decoration: none; /*No line below the letters*/
+      margin-right: 14px; /* Add some spacing between items */
+    }
+    
+    nav a.menu:hover{
+      background-color:aquamarine;
+      border-color:lightgreen;
+    }/*the menu changes color when moving the mouse to*/
+    
+    .menu {
+    border-style: solid;
+    border-color:gray;
+    padding: 7px 14px
+    } /*create a border for the menu*/
+
+    nav a.email-link{
+    font-weight:bold;
+    text-decoration: none;
+    }/*set up the email as a hyperlink with a bold font-weight and no line below*/
+
+
+
+    .hero{
+      display:grid;
+      gap:66px;
+      align-items:center;
+      padding:40px 0;
+    }
+
+    .kpis{
+      display:flex;
+      gap:16px;
+      margin-top:18px;
+    }
+
+    .kpi{
+      background:#f7fbff;
+      border-radius:10px;
+      padding:12px 14px;
+      min-width:120px;
+      text-align:center;
+    }/*create surrounding areas for the contents in the class "kpi"*/
+
+    .kpi strong{display:block;color:var(--accent);font-size:1.1rem}
+    .kpi span{display:block;color:var(--muted);font-size:.88rem;margin-top:6px}
+
+body{
+  background-image: url(https://img.freepik.com/free-vector/abstract-simple-white-backdrop-banner-with-blank-space_1017-49801.jpg?semt=ais_hybrid&w=740&q=80);
+  background-size: cover; /*cover the whole page*/
+  background-repeat: no-repeat; /*not repeat the background*/
+  background-attachment:fixed; /*background imagine is fixed when scrolling*/
+}
+
+main#jobs h1{
+  font: normal bold 36px Times; /*font-variant: normal, font-weight: bold, font-size: 36px, font-family: Times New Roman */
+}
+
+  footer#jobs{
+  width: 100%;
+  text-align: center;  
+  font-size: 14px;
+}/*the text in the footer*/
+  
+div#studentid{
+  float:right;
+  text-align: left;
+  margin-right: 50px;
+}/*student ids are moved to the right side of the page*/
+
+div#studentid{
+    border: 4px inset darkorange;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.5em;
+    width:25%;
+}/*a border for student ids content*/
+
+main#jobs aside{
+  width: 25%;
+  float:right;
+  overflow: auto;
+}/*the width and position of the aside element*/
+
+main#jobs aside{
+    border: solid;
+    border-color: darkorange;
+    padding: 1em;
+    margin:1em ;
+  }/*create a border for the aside element*/
+
+  main#about figure img{
+  width:250px;
+  height: auto;
+}/*adjust the size of the photo*/
+
+main#about figure img{
+border: 2px solid darkorange;
+}/*the border around the photo*/
+
+main#about figure{
+  float: right;
+}
+
+table{
+  text-align: center;
+  border: double;
+  margin:1px;
+  padding: 1px;
+}
+
+th,td{
+  border:1px solid black;
+  padding: 1px;
+  }
+  
+  th:hover{background-color:#fffcad ;
+      border-color:#ffa07a;}
+  
+      td:hover{
+    background-color:#fffcad ; 
+      border-color:#ffa07a;
+  } /*the cells change color when moving the mouse to*/
+
+  table caption{font-weight: bold;}
+
+footer{text-align: center;}
+
+footer#index p:first-child{text-align: left;float: left;}
+footer#index p:last-child{text-align: right;float: right;}
+ /*adjust the position of contents in the footer area*/
+
+ html{
+  padding: 8px; 
+  margin: 8px;
+}
+
+main#apply {display:grid;}
+
+fieldset{
+  display: inline-block; 
+  padding: 5px;
+  margin: 2px;
+} /*to fit the content inside the field*/
+
+label{font-size:15px;}
+
+button{padding:5px; margin:auto} /*the size of the button*/
+
+  
