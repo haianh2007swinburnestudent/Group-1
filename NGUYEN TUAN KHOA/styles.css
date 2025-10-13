@@ -171,7 +171,7 @@ footer#index p:last-child{text-align: right;float: right;}
  html{
   padding: 8px; 
   margin: 8px;
-}
+}/*for the whole page*/
 
 main#apply {display:grid;}
 
@@ -184,5 +184,6 @@ fieldset{
 label{font-size:15px;}
 
 button{padding:5px; margin:auto} /*the size of the button*/
+
 
   
