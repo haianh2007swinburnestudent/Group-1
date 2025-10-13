@@ -165,6 +165,7 @@ th,td{
 footer{text-align: center;}
 
 footer#index p:first-child{text-align: left;float: left;}
+footer#index p:nth-child(2){text-align: center;}
 footer#index p:last-child{text-align: right;float: right;}
  /*adjust the position of contents in the footer area*/
 
@@ -187,3 +188,4 @@ button{padding:5px; margin:auto} /*the size of the button*/
 
 
   
+
