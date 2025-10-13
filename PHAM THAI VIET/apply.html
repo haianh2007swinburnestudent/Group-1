@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" id="apply">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <span class="logo" aria-hidden="true">
+          <img src="logo.png" alt="SoftDevs logo" />
+        </span>
+
+        <span id="companyname">SoftDevs</span>
+
+      </a>
+<br><br>
+      <nav aria-label="Main navigation">
+        <a href="about.html"class="menu">About</a>
+        <a href="jobs.html"class="menu">Jobs</a>
+        <a href="apply.html"class="menu">Apply</a>
+        <a class="email-link" href="mailto:info@softdevs.com.au">info@softdevs.com.au</a>
+      </nav>
+        </header>
+       <hr>
+<main id="apply">
+     <h1>Job Application</h1>
+        <p>Please fill in the form below to apply for one of our advertised positions.</p>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+
+            <!-- Job Reference -->
+            <label for="jobref">Job Reference Number:</label>
+            <select id="jobref" name="jobref" required>
+                <option value="">-- Select Job Reference --</option>
+                <option value="IT201">IT201 – Junior Developer</option>
+                <option value="IT202">IT202 – Cybersecurity Analyst</option>
+            </select>
+            <br><br>
+
+            <!-- Name -->
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" maxlength="20" pattern="[A-Za-z]+" required>
+            <br><br>
+
+            <label for="name">Last Name:</label>
+            <input type="text" id="name" name="name" maxlength="20" pattern="[A-Za-z]+" required>
+            <br><br>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <!-- Gender -->
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female" required> Female</label>
+                <label><input type="radio" name="gender" value="Other" required> Other</label>
+            </fieldset>
+            <br><br>
+
+            <!-- Address -->
+            <label for="street">Street Address:</label>
+            <input type="text" id="street" name="street" maxlength="40" required>
+            <br><br>
+
+            <label for="suburb">Suburb/Town:</label>
+            <input type="text" id="suburb" name="suburb" maxlength="40" required>
+            <br><br>
+
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <option value="">-- Select State --</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select>
+            <br><br>
+
+            <!-- Postcode -->
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" pattern="\d{4}" required>
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <br><br>
+
+            <!-- Phone -->
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" pattern="[0-9\s]{8,12}" required>
+            <br><br>
+
+            <!-- Technical Skills -->
+            <fieldset>
+                <legend>Technical Skills (select all that apply)</legend>
+                <label><input type="checkbox" name="skills" value="HTML" required> HTML</label>
+                <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                <label><input type="checkbox" name="skills" value="Python"> Python</label>
+                <label><input type="checkbox" name="skills" value="Cybersecurity"> Cybersecurity</label>
+            </fieldset>
+            <br><br>
+
+            <!-- Other Skills -->
+            <label for="otherskills">Other Skills:</label><br>
+            <textarea id="otherskills" name="otherskills" rows="4" cols="50" placeholder="Optional..."></textarea>
+            <br><br>
+
+            <!-- Submit -->
+            <button type="submit">Apply</button>
+        </form>
+    </main>
+<hr>
+    <footer>
+        <p>&copy; 2025 Tech Innovators Pty Ltd. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
